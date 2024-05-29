@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href="../CSSFolder/StyleSheet.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <button class="back-button"><a href="Index.html">Back</a></button>
+    <div class="container">
+        <form id="registrationForm">
+            <h1>Registration</h1>
+            <div class="form-group">
+                <label for="userId">ID:</label>
+                <input type="text" id="userId" name="userId" required placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="fullName">UserName:</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required  placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="4" placeholder="Enter your password">
+            </div>
+
+
+            <button type="submit" id="RegisterButton">Register</button>
+        </form>
+    </div>
+    <script src="../JSFolder/ajaxCalls.js"></script>
+    <script src="../JSFolder/RegistJs.js"></script>
+</body>
+</html>
